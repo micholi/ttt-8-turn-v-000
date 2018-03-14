@@ -14,8 +14,7 @@ end
 
 # code for #valid_move? method
 def valid_move?(board, position)
-  if position.between?(0, 8) && position_taken?(board, position) == false
-    true
+  position.between?(0, 8) && position_taken?(board, position) == false
   end
 end
 # code for #position_taken? method
@@ -36,6 +35,6 @@ def turn(board)
   puts "Please enter 1-9:"
   user_input = gets.strip
   input_to_index(user_input)
-
+  if valid_move?
 
 end
