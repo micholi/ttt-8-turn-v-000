@@ -1,5 +1,6 @@
 def turn
   puts "Please enter 1-9:"
+  input_to_index(input)
   if valid_move? == true
     move(board, index, character = "X")
     display_board(board)
