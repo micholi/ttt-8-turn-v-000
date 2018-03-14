@@ -14,7 +14,7 @@ end
 
 # code for #position_taken? method
 def position_taken?(board, index)
-  board[index] != " "
+  board[index] != " " 
 end
 
 # code for #valid_move? method
