@@ -22,8 +22,8 @@ def display_board(board)
 end
 
 # code for #input_to_index method
-def input_to_index(input)
-  index = input.to_i - 1
+def input_to_index(user_input)
+  index = user_input.to_i - 1
 end
 
 # code for #valid_move? method
