@@ -8,8 +8,8 @@ def display_board(board)
 end
 
 # code for #input_to_index method
-def input_to_index(user_input)
-  user_input.to_i - 1
+def input_to_index(input)
+  input.to_i - 1
 end
 
 # code for #position_taken? method
@@ -29,8 +29,8 @@ end
 
 def turn(board)
   puts "Please enter 1-9:"
-  user_input = gets.strip
-  input_to_index(user_input)
+  input = gets.strip
+  index = input_to_index(user_input)
   if valid_move?(board, index)
     move(board, index, character = "X")
     display_board(board)
