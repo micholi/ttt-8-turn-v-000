@@ -1,5 +1,7 @@
 def turn
   puts "Please enter 1-9:"
+  while !valid_move?
+    turn
 end
 
 
