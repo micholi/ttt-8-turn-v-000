@@ -28,8 +28,8 @@ def position_taken?(board, position)
 end
 
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-def move(board, index, character = "X")
-  board[index] = character
+def move(board, position, character = "X")
+  board[position] = character
 end
 
 def turn(board)
