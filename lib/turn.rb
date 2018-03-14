@@ -1,6 +1,9 @@
 def turn
   puts "Please enter 1-9:"
-  while !valid_move?
+  if valid_move?
+    move(board, index, character = "X")
+    display_board(board)
+  else
     turn
 end
 
