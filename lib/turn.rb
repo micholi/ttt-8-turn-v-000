@@ -17,6 +17,7 @@ def valid_move?(board, position)
   position.between?(0, 8) && position_taken?(board, position) == false
   end
 end
+
 # code for #position_taken? method
 def position_taken?(board, position)
   if board[position] == " " || board[position] == "" || board[position] == nil
