@@ -39,8 +39,9 @@ def turn(board)
   input_to_index(user_input)
   if valid_move?(board, position)
 move(board, position, character = "X")
-display_board(board)
+
 else
   turn(board)
 end
+display_board(board)
 end
