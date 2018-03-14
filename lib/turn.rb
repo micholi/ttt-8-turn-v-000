@@ -12,11 +12,6 @@ def input_to_index(user_input)
   index = user_input.to_i - 1
 end
 
-# code for #valid_move? method
-def valid_move?(board, index)
-  index.between?(0, 8) && !position_taken?(board, index)
-end
-
 # code for #position_taken? method
 def position_taken?(board, index)
   if board[index] == " " || board[index] == "" || board[index] == nil
@@ -24,6 +19,11 @@ def position_taken?(board, index)
   elsif board[index] == "X" || board[index] == "O"
     true
   end
+end
+
+# code for #valid_move? method
+def valid_move?(board, index)
+  index.between?(0, 8) && !position_taken?(board, index)
 end
 
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
@@ -35,5 +35,5 @@ def turn(board)
   puts "Please enter 1-9:"
   user_input = gets.strip
   input_to_index(user_input)
-  
+
 end
