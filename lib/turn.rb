@@ -1,6 +1,5 @@
 def turn
-
-  
+  puts "Please enter 1-9"
 end
 
 
