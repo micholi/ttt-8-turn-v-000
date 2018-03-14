@@ -20,9 +20,9 @@ def valid_move?(board, position)
 end
 # code for #position_taken? method
 def position_taken?(board, position)
-  if board[index] == " " || board[index] == "" || board[index] == nil
+  if board[position] == " " || board[position] == "" || board[position] == nil
     false
-  elsif board[index] == "X" || board[index] == "O"
+  elsif board[position] == "X" || board[position] == "O"
     true
   end
 end
