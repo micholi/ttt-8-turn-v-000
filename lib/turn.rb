@@ -14,7 +14,7 @@ end
 
 # code for #position_taken? method
 def position_taken?(board, index)
-  board[index] != " " 
+  board[index] != " "
 end
 
 # code for #valid_move? method
@@ -31,10 +31,10 @@ def turn(board)
   puts "Please enter 1-9:"
   user_input = gets.strip
   input_to_index(user_input)
-  if !valid_move?(board, index)
-    turn(board)
-  else
+  if valid_move?(board, index)
     move(board, index, character = "X")
     display_board(board)
+  else
+    turn(board)
   end
 end
