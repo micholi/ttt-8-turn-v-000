@@ -14,7 +14,6 @@ end
 
 # code for #valid_move? method
 def valid_move?(board, position)
-  input_to_index(user_input)
   position.between?(0, 8) && position_taken?(board, position) == false
   end
 end
