@@ -9,12 +9,12 @@ end
 
 # code for #input_to_index method
 def input_to_index(user_input)
-  index = user_input.to_i - 1
+  user_input.to_i - 1
 end
 
 # code for #position_taken? method
 def position_taken?(board, index)
-  board[index] != " " 
+  board[index] != " "
 end
 
 # code for #valid_move? method
