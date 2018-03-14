@@ -15,8 +15,6 @@ end
 # code for #position_taken? method
 def position_taken?(board, index)
   board[index] != " " || board[index] != "" || board[index] != nil
-  # elsif board[index] == "X" || board[index] == "O"
-    # true
 end
 
 # code for #valid_move? method
