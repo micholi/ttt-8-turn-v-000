@@ -4,7 +4,7 @@ def turn(board)
   input_to_index(user_input)
   if valid_move?(board, index) == false
     turn(board)
-  else 
+  else
     move(board, index, character = "X")
     display_board(board)
   end
